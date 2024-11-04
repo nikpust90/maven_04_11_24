@@ -29,8 +29,8 @@ public class Work_1 implements Comparator<String> {
             //логирование
             ExampleClass example = new ExampleClass();
             example.doSomething();
-            //2
-        int a = 1;
+            //
+
 
 
 
