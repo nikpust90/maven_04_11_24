@@ -1,8 +1,11 @@
 package org.example;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
+@Slf4j
 public class Work_5 {
     public static void main(String[] args) {
         //5
@@ -30,7 +33,7 @@ public class Work_5 {
             }
         }
         //логирование
-        ExampleClass example = new ExampleClass();
-        example.doSomething();
+        log.info("work_5");
+
     }
 }

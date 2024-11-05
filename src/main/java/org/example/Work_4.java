@@ -1,11 +1,15 @@
 package org.example;
 
+import ch.qos.logback.classic.Logger;
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+@Slf4j
 public class Work_4 {
     public static void main(String[] args) {
         //4
@@ -28,8 +32,8 @@ public class Work_4 {
         doubleValues(list);
 
         //логирование
-        ExampleClass example = new ExampleClass();
-        example.doSomething();
+        log.info("work_4");
+
     }
 
     private static void doubleValues(ArrayList<String> list) {
