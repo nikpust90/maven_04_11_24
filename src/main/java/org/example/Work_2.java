@@ -1,9 +1,12 @@
 package org.example;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+@Slf4j
 public class Work_2 {
     public static void main(String[] args) {
         //2
@@ -19,7 +22,6 @@ public class Work_2 {
         list.forEach(x -> System.out.println(x));
 
         //логирование
-        ExampleClass example = new ExampleClass();
-        example.doSomething();
+        log.info("work_2");
     }
 }

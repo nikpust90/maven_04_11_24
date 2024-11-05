@@ -1,9 +1,12 @@
 package org.example;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
+@Slf4j
 public class Work_3 {
     public static void main(String[] args) {
         //3
@@ -28,8 +31,7 @@ public class Work_3 {
             System.out.println(string);
         }
         //логирование
-        ExampleClass example = new ExampleClass();
-        example.doSomething();
+        log.info("work_2");
     }
 
     public static List<String> fix(List<String> strings) {
@@ -51,7 +53,7 @@ public class Work_3 {
 
 
 
-
+        log.info(oneList.toString());
         return oneList;
     }
 }

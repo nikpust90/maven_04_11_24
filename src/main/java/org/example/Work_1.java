@@ -2,9 +2,12 @@ package org.example;
 
 
 
+import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+
 import java.util.*;
 
-
+@Slf4j
 public class Work_1 implements Comparator<String> {
     public static void main(String[] args) {
         //1
@@ -13,7 +16,7 @@ public class Work_1 implements Comparator<String> {
         //Введи с клавиатуры 5 слов в список строк. Удали 3 - ий элемент списка, и выведи оставшиеся элементы в обратном порядке.
 
 
-            List<String> list = new ArrayList<>();
+        List<String> list = new ArrayList<>();
 
             Scanner scanner = new Scanner(System.in);
             for (int i = 0; i < 5; i++) {
@@ -27,10 +30,9 @@ public class Work_1 implements Comparator<String> {
             list.forEach(System.out::println);
 
             //логирование
-            ExampleClass example = new ExampleClass();
-            example.doSomething();
-            //2
-        int a = 1;
+            log.info("ИНФО");
+            //
+
 
 
 
